@@ -1,0 +1,214 @@
+/* =====================================================
+   ESTILOS GENERALES — LÁCTEOS DEL NORTE (Versión final)
+   ===================================================== */
+
+/* Paleta verde-láctea moderna */
+:root{
+  --green-900: #0b6b3a;
+  --green-700: #14986b;
+  --green-500: #34c08a;
+  --cream: #fffef7;
+  --soft: #f6fff8;
+  --muted: #6b6b6b;
+}
+
+/* Reset general */
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: var(--soft);
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ------------------ NAVBAR ------------------ */
+.navbar{
+  backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,0.9) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.navbar-brand strong{ color: var(--green-900); }
+.nav-link{
+  font-weight: 500;
+  transition: color .2s;
+}
+.nav-link:hover{
+  color: var(--green-700);
+}
+.logo{
+  width: 56px; height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ------------------ HERO ------------------ */
+.hero-section{
+  background: linear-gradient(90deg, rgba(20,152,107,0.06), rgba(52,192,138,0.02));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.hero-img{
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.accent{ color: var(--green-700); }
+
+/* ------------------ SECCIONES ------------------ */
+.section-header h2{
+  font-weight: 700;
+  color: var(--green-900);
+  letter-spacing: -0.3px;
+}
+.section-header p{
+  color: var(--muted);
+}
+
+/* ------------------ TARJETAS ------------------ */
+.card{
+  border: none;
+  border-radius: 14px;
+  background: #fff;
+  transition: all 0.25s ease;
+}
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+.card img{
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+/* ------------------ BOTONES ------------------ */
+.btn-primary{
+  background: linear-gradient(90deg, var(--green-700), var(--green-500));
+  border: none;
+  box-shadow: 0 6px 16px rgba(20,152,107,0.18);
+  transition: all 0.2s;
+}
+.btn-primary:hover{ filter: brightness(1.1); }
+.btn-outline-success{
+  border-color: var(--green-700);
+  color: var(--green-700);
+}
+.btn-outline-success:hover{
+  background: var(--green-700);
+  color: white;
+}
+
+/* ------------------ SECCIONES CON FONDO SUAVE ------------------ */
+.bg-soft{
+  background: linear-gradient(180deg, #ffffff, #f8fff8);
+}
+
+/* ------------------ SECCIÓN GRAFICOS + ARQUITECTURA ------------------ */
+#graficos .card{
+  border-radius: 16px;
+  background: #fff;
+}
+#graficos .card h5{
+  color: var(--green-900);
+  font-weight: 700;
+}
+#graficos canvas{
+  width: 100% !important;
+  max-width: 700px !important;
+  height: 500px !important;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Botones dentro del gráfico */
+#graficos .card .btn{
+  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 0.4rem 1rem;
+}
+
+/* ----- IMAGEN DE ARQUITECTURA TECNOLÓGICA FUTURAL ----- */
+.col-lg-6[data-aos="fade-left"] .card.text-center {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.col-lg-6[data-aos="fade-left"] .card.text-center:hover {
+  transform: translateY(-4px);
+}
+
+/* Imagen principal del diagrama */
+.col-lg-6[data-aos="fade-left"] .card.text-center img.img-fluid {
+  width: 100%;
+  max-width: 950px; /* tamaño máximo */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: zoom-in;
+}
+
+/* Efecto hover (ligero zoom) */
+.col-lg-6[data-aos="fade-left"] .card.text-center img.img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Título de la tarjeta */
+.col-lg-6[data-aos="fade-left"] .card.text-center h5 {
+  color: var(--green-900);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Descripción debajo de la imagen */
+.col-lg-6[data-aos="fade-left"] .card.text-center p.small {
+  color: #666;
+  font-size: 0.92rem;
+  margin-top: 1rem;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer{
+  background: var(--green-900);
+  color: #f8fff8;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  border-top: 3px solid var(--green-700);
+}
+
+/* ------------------ TEXTO Y UTILIDADES ------------------ */
+.text-muted{
+  color: #68707a !important;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 992px){
+  .hero-img{ max-height: 260px; }
+  .logo{ width: 48px; height: 48px; }
+  #graficos .card canvas{
+    max-width: 100% !important;
+    height: 400px !important;
+  }
+  .col-lg-6[data-aos="fade-left"] .card.text-center img.img-fluid {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px){
+  #graficos .card{
+    padding: 1.5rem 1rem;
+  }
+  #graficos .card canvas{
+    height: 350px !important;
+  }
+}

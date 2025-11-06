@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lácteos del Norte — Visión 2030 (Basado en Examen II)</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Sitio generado en base al documento 'Examen II - Gerencia de TI' sobre Lácteos del Norte.">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="descarga.jpeg" alt="logo" class="logo me-2">
+        <div>
+          <strong>Lácteos del Norte</strong><br><small class="text-muted">Caso de estudio — Examen II</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proceso">Proceso</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Visión 2030</a></li>
+          <li class="nav-item"><a class="nav-link" href="#arquitectura">Arquitectura</a></li>
+          <li class="nav-item"><a class="nav-link" href="#graficos">Gráficos</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="miembrosDropdown" role="button" data-bs-toggle="dropdown">Integrantes</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="miembrosDropdown">
+              <li><span class="dropdown-item">Columbos Navarro, Anderson Aldair</span></li>
+              <li><span class="dropdown-item">Crisanto Silupu, Luis Angel</span></li>
+              <li><span class="dropdown-item">Quevedo Domador, Arnold Jose</span></li>
+              <li><span class="dropdown-item">Saavedra Purizaca, Luis Fernando</span></li>
+              <li><span class="dropdown-item">Laban de la Cruz, Santiago</span></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#conclusiones">Conclusiones</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / INICIO -->
+  <header id="inicio" class="hero-section">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h1 class="display-5 fw-bold">Lácteos del Norte — <span class="accent">Transformación hacia 2030</span></h1>
+          <p class="lead">Resumen del caso de estudio: proceso de producción, visión tecnológica y objetivos de sostenibilidad y trazabilidad.</p>
+          <a href="#vision" class="btn btn-primary btn-lg me-2"><i class="fa-solid fa-rocket me-2"></i>Visión 2030</a>
+          <a href="#graficos" class="btn btn-outline-success btn-lg"><i class="fa-solid fa-chart-line me-2"></i>Ver gráficos</a>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <img src="descarga.jpeg" alt="lácteos" class="img-fluid rounded hero-img shadow">
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROCESO (5 etapas) -->
+  <section id="proceso" class="py-5">
+    <div class="container">
+      <div class="section-header text-center mb-4" data-aos="fade-up">
+        <h2>Proceso de Producción (5 etapas)</h2>
+        <p class="text-muted">Adaptado directamente del documento de estudio.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card h-100 shadow-sm">
+            <img src="proceso.jpeg" class="card-img-top" alt="Preparación">
+            <div class="card-body">
+              <h5 class="card-title">1. Preparación y Pasteurización</h5>
+              <p class="card-text">Filtrado y tratamiento térmico controlado para eliminar microorganismos y asegurar inocuidad.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <img src="Pasar-de-leche-a-queso.jpg" class="card-img-top" alt="Transformación">
+            <div class="card-body">
+              <h5 class="card-title">2. Transformación del producto</h5>
+              <p class="card-text">Cuajado para queso; cocción prolongada con azúcar para manjar blanco; procesos específicos según derivado.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <img src="images.jpeg" class="card-img-top" alt="Control de calidad">
+            <div class="card-body">
+              <h5 class="card-title">3. Control de calidad en proceso</h5>
+              <p class="card-text">Ensayos de laboratorio: temperatura, pH, densidad y humedad para garantizar estándares técnicos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-3" data-aos="fade-up">
+          <div class="card h-100 shadow-sm">
+            <img src="imag8550hinoj.jpg" class="card-img-top" alt="Moldeado">
+            <div class="card-body">
+              <h5 class="card-title">4. Moldeado y Envasado</h5>
+              <p class="card-text">Moldeado y envasado en materiales que garantizan conservación e higiene, preparando para almacenamiento y distribución.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <img src="Bocadillo.jpg" class="card-img-top" alt="Maduración">
+            <div class="card-body">
+              <h5 class="card-title">5. Maduración y Enfriamiento</h5>
+              <p class="card-text">Maduración de quesos y enfriamiento de otros productos para lograr textura, sabor y vida útil óptimos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION 2030 -->
+  <section id="vision" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h3>Visión al año 2030</h3>
+          <p>El documento plantea transformar la planta en un modelo digitalizado, sostenible y autónomo, apoyado en:</p>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-microchip text-success me-2"></i> IoT y sensores en tanques (temperatura, pH, flujo)</li>
+            <li><i class="fa-solid fa-robot text-success me-2"></i> IA, visión artificial y robótica colaborativa para automatizar pasteurización y envasado</li>
+            <li><i class="fa-solid fa-signal text-success me-2"></i> Red 5G privada y Edge Computing para baja latencia y procesamiento local</li>
+            <li><i class="fa-solid fa-sitemap text-success me-2"></i> Gemelo digital para simulación y optimización</li>
+            <li><i class="fa-solid fa-leaf text-success me-2"></i> Energías limpias y empaques biodegradables para sostenibilidad</li>
+          </ul>
+          <p class="small text-muted">Resumen tomado del caso de estudio incluido en el PDF de trabajo.</p>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <img src="arqui1.jpeg" alt="Visión 2030" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARQUITECTURA TECNOLÓGICA -->
+  <section id="arquitectura" class="py-5">
+    <div class="container">
+      <div class="section-header text-center mb-4" data-aos="fade-up">
+        <h2>Arquitectura Tecnológica (resumen)</h2>
+        <p class="text-muted">Capas y tecnologías propuestas por el estudio.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="flip-left">
+          <div class="card p-3 shadow-sm">
+            <h5>Capas principales</h5>
+            <ol>
+              <li><strong>Capa física / CPS:</strong> Sensores IoT, actuadores y equipos de control.</li>
+              <li><strong>Conectividad:</strong> Red 5G privada, comunicación en tiempo real.</li>
+              <li><strong>Edge / Nube:</strong> Procesamiento local y almacenamiento para gemelo digital.</li>
+              <li><strong>Integración:</strong> Blockchain alimentario para trazabilidad.</li>
+              <li><strong>Experiencia:</strong> Empaques inteligentes (NFC/QR) y dashboards para gestión.</li>
+            </ol>
+            <p class="small text-muted">Puntos extraídos del documento de estudio.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="flip-right">
+          <div class="card p-3 shadow-sm">
+            <h5>Objetivos clave</h5>
+            <ul>
+              <li>Trazabilidad 100% confiable</li>
+              <li>Eliminar errores humanos con IA y robótica</li>
+              <li>Mantenimiento predictivo con IA</li>
+              <li>Reducir huella de carbono mediante energía renovable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAFICOS: AVANCE TECNOLOGICO 2030 -->
+<section id="graficos" class="py-5 bg-soft">
+  <div class="container">
+    <div class="section-header text-center mb-4" data-aos="fade-up">
+      <h2>Avance Tecnológico y Arquitectura Futural</h2>
+      <p class="text-muted">Basado en el documento "Examen II - Gerencia de TI" y el esquema de arquitectura tecnológica futura de Lácteos del Norte.</p>
+    </div>
+
+    <div class="row align-items-center g-4">
+      <!-- Gráfico radar -->
+      <div class="col-lg-6" data-aos="zoom-in">
+        <div class="card p-4 shadow-sm">
+          <h5 class="mb-3">Progreso (0 - 100%) por área tecnológica</h5>
+          <canvas id="techRadar" height="340"></canvas>
+          <p class="small text-muted mt-2">Interpreta los porcentajes como nivel esperado de adopción hacia 2030.</p>
+          <div class="mt-3 d-flex gap-2">
+            <button id="btn-animar" class="btn btn-primary btn-sm">Animar gráficos</button>
+            <button id="btn-descargar" class="btn btn-outline-success btn-sm">Descargar imagen</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen de arquitectura -->
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <img src="arqui2.jpeg" alt="Visión 2030" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- CONCLUSIONES -->
+  <section id="conclusiones" class="py-5">
+    <div class="container">
+      <div class="card p-4 shadow-sm" data-aos="fade-up">
+        <h4>Conclusiones principales</h4>
+        <ul>
+          <li>Enfoque de Valor en el Proceso de Producción: El proceso de producción es identificado como el núcleo operativo y el principal generador de valor agregado para Lácteos del Norte, justificando su selección para el análisis y la innovación tecnológica. La empresa reconoce que la mejora de este proceso es esencial para la eficiencia, la competitividad y la satisfacción del cliente.
+</li> <br>
+          <li>Arquitectura Tecnológica Actual Limitada y Manual: La arquitectura tecnológica actual de la empresa presenta un uso básico y fragmentado de la tecnología, con dependencias significativas en herramientas simples como Excel para la gestión de pedidos, compras y CRM, y controles manuales para aspectos críticos como la calidad (pH, temperatura). Esto sugiere que existe una gran oportunidad para la digitalización y la automatización.
+</li> <br>
+          <li>Visión Estratégica Hacia la Industria 4.0: Lácteos del Norte tiene una visión clara y ambiciosa para 2030, que busca transformar su producción en un modelo de Industria 4.0 completamente digitalizado, sostenible y autónomo. Esta transformación se basa en la integración de tecnologías avanzadas como Sistemas Ciber Físicos (IoT), Inteligencia Artificial (IA), Robótica Colaborativa (Cobots), Edge Computing, y Gemelos Digitales.
+</li> <br>
+          <li>Priorización de Trazabilidad Total y Calidad Interrumpida: La estrategia de TI para 2030 se centra en objetivos críticos de calidad y transparencia, buscando lograr una producción 100% trazable mediante la implementación de Blockchain alimentario y la meta de "cero errores humanos" utilizando IA y robótica. Esto demuestra un enfoque estratégico en la confianza del consumidor y la consistencia del producto.
+</li> <br>
+          <li>Compromiso con la Sostenibilidad a través de la Tecnología: El plan futuro no solo se enfoca en la eficiencia operativa, sino que también integra la sostenibilidad como un pilar central, planeando implementar energías limpias (solar y biogás) y utilizar la analítica predictiva y los Gemelos Digitales para optimizar recursos y reducir la huella de carbono.
+</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-light">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <small><strong>Examen II - Gerencia de TI</strong> — Lácteos del Norte (2025).</small>
+      </div>
+      <div>
+        <small>© Lácteos del Norte — Trabajo académico</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
